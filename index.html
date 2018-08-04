@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/logo.png" sizes="16x16">
+    <title>TD Bank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=320, target-densitydpi=device-dpi">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  
+ 
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+  
+  
+<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+</script>
+
+<!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
+
+
+    <style type="text/css">
+	
+	
+	
+
+	
+        body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: #EFEFF4;
+    }
+	
+	.fispace
+	{
+		padding-right: 25px;
+	}
+
+    .navbar {
+        background-color: #12422B !important;
+    }
+
+    .navbar a {
+        color: white !important;
+    }
+
+    #img_logo {
+        width: 14%;
+        height: auto;
+    }
+
+    #myNav {
+        display: -webkit-box;
+    }
+
+    input[type=text],
+    input[type=button],
+    input[type=email] {
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        input[type=text],
+        input[type=button],
+        input[type=email] {
+            margin-right: 0px;
+            margin-bottom: 40px;
+        }
+    }
+
+    select {
+        margin-right: 20px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        select {
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+
+
+        @media only screen and (max-width: 720px) {
+            #img_logo {
+                width: 12%;
+                height: auto;
+            }
+            #myNav {
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 720px) {
+        .seat{  
+          width: 100%;    
+        }
+      }
+
+	  
+	  
+	 }
+	 
+	  .demopadding {
+  margin:50px auto;
+  width:220px;
+  text-align:center;
+}
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	border: 2px solid #218838;
+	padding:20px;
+	border-top-right-radius: 	22px;
+	border-top-left-radius: 	22px;
+	border-bottom-right-radius: 22px;
+	border-bottom-left-radius: 	22px; 
+	
+	-webkit-border-radius: 		22px 22px 22px 22px;
+	-khtml-border-radius: 		22px 22px 22px 22px; 	
+	color:#FFFFFF;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+.icon.social {
+	float:left;
+	margin: 0px 5px 5px 5px;
+	cursor:pointer;
+	background:#1A5336 ;
+
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social:hover {
+	background:#262626 ;
+	color:#6d6e71;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
+select {
+    -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;     
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #F07575; /* fallback color if gradients are not supported */
+    background-image: url(img/arrow.png); /* For Chrome and Safari */
+    background-image: url(img/arrow.png); /* For old Fx (3.6 to 15) */
+    background-image: url(img/arrow.png); /* For pre-releases of IE 10*/
+    background-image: url(img/arrow.png); /* For old Opera (11.1 to 12.0) */ 
+    background-image: url(img/arrow.png); /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: #555;
+    font-size: inherit;
+	background-size:14px;
+	
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+    </style>
+    <script>
+    function isNumber(evt) {
+        var charCode = (evt.which) ? evt.which : evt.keyCode
+        if (charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+
+        return true;
+    }
+
+
+function validateForm() {
+    var x = document.forms["myForm"]["fname"]["lname"]["email"]["sin"].value;
+    if (x == "") {
+        alert("Fill all the required fields!");
+        return false;
+    }
+}
+    </script>
+    <script>
+      $(function () {
+  $('#datetimepicker1').datetimepicker();
+});
+    </script>
+</head>
+
+<body>
+    <!--header starts here-->
+
+
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNav">
+                <button aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbars" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button> <img class="img-responsive" id="img_logo" src="img/logo.png"> <a class="navbar-brand" href="#" style="color: white;font-weight: bold;">TD Insurance</a>
+                <div class="collapse navbar-collapse" id="navbars">
+                    <ul class="navbar-nav nav justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://www.tdinsurance.com/">Products <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.tdinsurance.com/claims">Claims</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.tdinsurance.com/customer-service/contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Ontario<span class="caret"></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">EN<span class="caret"></span></a>
+                        </li>
+						  <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-search"></i> <span></span></a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-lock"></i> <span>Login</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    <!--header ends here-->
+    <!--content area-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-sm-12" style="margin-top: 60px;">
+                <h3>Tell Us About Yourself</h3>
+                <h5>Thanks for choosing TD Insurance! In order to safely set up your new accounts and services, please tell us about yourself.</h5>
+                <h3 style="margin-top: 60px;margin-bottom: 30px;">Personal Information</h3>
+                <form name="myForm" action="#" onsubmit="return validateForm()">
+                    <div class="container">
+                        <div class="row">
+                            <select class="form-control col-md-2 col-sm-12" name="title" id="select">
+                                <option value="0">
+                                    Title*
+                                </option>
+                                <option value="1">
+                                    Mr.
+                                </option>
+                                <option value="2">
+                                    Mrs.
+                                </option>
+                                <option value="3">
+                                    Miss
+                                </option>
+                            </select>
+                            <input class="form-control col-md-3 col-sm-12" id="fname" name="fname" placeholder="First Name*" type="text" required>
+                            <input class="form-control col-md-2 col-sm-12" id="midinitial" name="midinitial" placeholder="Middle Initial*" type="text" >
+                            <input class="form-control col-md-3 col-sm-12" id="lname" name="lname" placeholder="Last Name*" type="text" required>
+                        </div>
+                        <div class="row">
+						
+						<div  class="col-md-5" style="display: -webkit-box; width:100%;padding-left: 0px;">
+						
+                            <input  id="email" class="col-md-10 form-control " name="email" placeholder="Email Address*" type="email"  style="margin-right:5px;" required>
+                               <span ><i class="fa fa-question-circle-o" style="color: green;margin-left:5px;vertical-align: middle;
+"></i></span>
+                        
+						 </div>
+						 
+						   
+      
+					<input class="form-control col-md-2 col-sm-12" id="date" name="date" placeholder="Date of Birth*" type="text"/>
+                            
+                            
+						<div  class="col-md-4" style="display: -webkit-box; width:100%;padding-left: 0px;">
+						
+                            <input onkeypress="return isNumber(event)" class="form-control col-md-10 " id="sin" name="sin" pattern="\d+" placeholder="Social Insurance Number*" type="text" style="margin-right:5px;" required>
+                               <span ><i class="fa fa-question-circle-o" style="color: green;margin-left:5px;vertical-align: middle;
+"></i></span>
+                        
+						 </div>
+                           
+  
+                        </div>
+                        <div class="row">
+                            <div class="col-md-11" style="float: right;">
+                                <button type="submit" name="submit" value="Submit" class="btn btn-success pull-right" style="margin-left: 10px;">Submit</button>
+                                <button type="reset" class="btn btn-danger pull-right">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-3 col-sm-12" style="margin-top: 20px;">
+                <h6>You are applying for:</h6>
+                <h5 style="margin: 40px 0px 40px 0px;">TD&reg; Travel Medical Insurance</h5>
+                <button class="btn btn-md btn-success ">See More Coverage Options</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="background-color: #1A5336;width: 100%;height: inherit;margin-top: 40px;padding-bottom: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 order-md-3">
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-md-12">
+                                <h3 style="color: white;text-align: center;margin-top: 60px;margin-bottom:30px; padding-bottom:5px;">Need to talk to us directly?<span style="color:#0ef27c;">Contact us &rsaquo;
+								</h3></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row" style="width:100%;color: white;border-bottom:1px solid #218838; padding-bottom:20px;border-top:1px solid #218838;padding-top:20px;">
+                         
+                            <div class="col-md-4">
+                                <p style="color: white;text-align: center">Privacy and Security</p>
+                            </div>
+                            <div class="col-md-1">
+                                <p style="color: white;text-align: center">Legal</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p style="color: white;text-align: center">Accessibility</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p style="color: white;text-align: center">About Us</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p style="color: white;text-align: center">Careers</p>
+                            </div>
+						</div>
+                        
+                    </div>
+					<div class='demopadding'>
+  <div class='icon social fb'><i class='fa fa-facebook'></i></div>
+  <div class='icon social tw'><i class='fa fa-twitter'></i></div>
+  <div class='icon social in'><i class='fa fa-youtube-play '></i></div>
+  <div class='icon social in'><i class='fa fa-rss'></i></div>
+</div>  
+					
+                    <!--<div class="container" style="padding-top:10px">
+						<div class="row">
+                            <div class="col-md-2 col-sm-1">
+                                <a href="https://www.facebook.com/"><img src="img/fb.png"></a></div>
+                            <div class="col-md-2 col-sm-1">
+                                <a href="https://twitter.com/"><img src="img/twitter.png"></a></div>
+                            <div class="col-md-2 col-sm-1">
+                                <a href="https://www.youtube.com/"><img src="img/youtube.png"></a></div>
+                            <div class="col-md-2 col-sm-1"> <a href="#"><img src="img/wl.png"></a>
+                            </div>
+						</div>
+					</div> -->
+                    
+                </div>
+                <div class="col-md-3 col-sm-12"><img src="img/footer-seat.png" class="img-responsive" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	 <script>
+  $( function() {
+    $( "#datepicker1" ).datepicker({ showAnim: "fold" });
+		
+  } );
+  
+  
+  </script>
+
+  
+
+
+</body>
+
+</html>
